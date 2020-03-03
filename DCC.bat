@@ -13,7 +13,7 @@ powershell Expand-Archive -Force %u%\DCC\triddefs.zip %u%\DCC
 del %u%\DCC\trid_w32.zip
 del %u%\DCC\triddefs.zip
 cls
-setupdone
+:setupdone
 cd %APPDATA%\discord\Cache
 start.
 trid %APPDATA%\discord\Cache\* -ae >nul

@@ -19,5 +19,5 @@ start.
 trid %APPDATA%\discord\Cache\* -ae >nul
 echo Continuing will delete cache, feel free to close if otherwise
 pause
-del %APPDATA%\discord\Cache\*.*
+echo y | del %APPDATA%\discord\Cache\*.*
 exit

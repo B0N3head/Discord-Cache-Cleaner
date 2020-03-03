@@ -16,7 +16,7 @@ cls
 :setupdone
 cd %APPDATA%\discord\Cache
 start.
-trid %APPDATA%\discord\Cache\* -ae >nul
+%u%\DCC\trid %APPDATA%\discord\Cache\* -ae >nul
 echo Continuing will delete cache, feel free to close if otherwise
 pause
 echo y | del %APPDATA%\discord\Cache\*.*

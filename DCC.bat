@@ -1,12 +1,5 @@
 @echo off
 title Discord Cache Cleaner
-NET SESSION >nul 2>&1
-IF %ERRORLEVEL% EQU 0 (
-	rem a
-	) else (   
-	echo Run this as admin
-	pause
-	exit )
 set u=%userprofile%
 if exist %u%\DCC\trid.exe (goto setupdone)
 echo Just setting up dependencies

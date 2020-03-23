@@ -20,5 +20,5 @@ echo Working...
 start.
 %u%\DCC\trid %c%\* -ae >nul
 echo Press any button to delete cache
-pause >nul
+pause
 echo y | del %c%\*.*

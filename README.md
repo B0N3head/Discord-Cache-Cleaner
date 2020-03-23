@@ -1,7 +1,7 @@
 # Discord-Cache-Cleaner
 Simple Discord cache viewer and cleaner written in batch
 
-There are 3 files chose which one (they all fundamentally do the same thing)
+There are 3 files, your choice (they all fundamentally do the same thing)
 - DCC-Min  |  389 bytes
 - DCC-Main  |  559 bytes 
 - DCC-With-Text  |  862 bytes

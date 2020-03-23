@@ -1,22 +1,23 @@
 @echo off
-set u=%userprofile%
+set u=%appdata%\DCC
 set t=trid_w32.zip
 set r=triddefs.zip
 set w=https://mark0.net/download/
-set c=%APPDATA%\discord\Cache
-if exist %u%\DCC\trid.exe (goto d)
-cd %u%
+set c=%appdata%\discord\Cache
+set p=powershell Expand-Archive -Force
+if exist %u%\trid.exe goto d
+cd %appdata%
 md DCC
-cd %u%\DCC
+cd %u%
 curl -o %t% %w%%t%
 curl -o %r% %w%%r%
-powershell Expand-Archive -Force %u%\DCC\%t% %u%\DCC
-powershell Expand-Archive -Force %u%\DCC\%r% %u%\DCC
-del %u%\DCC\%t%
-del %u%\DCC\%r%
+%p% %u%\%t% %u%
+%p% %u%\%r% %u%
+del %u%\%t%
+del %u%\%r%
 :d
 cd %c%
 start.
-%u%\DCC\trid %c%\* -ae >nul
+%u%\trid %c%\* -ae >nul
 pause
 echo y | del %c%\*.*

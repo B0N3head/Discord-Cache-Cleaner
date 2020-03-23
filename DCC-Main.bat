@@ -5,6 +5,7 @@ set r=triddefs.zip
 set w=https://mark0.net/download/
 set c=%APPDATA%\discord\Cache
 if exist %u%\DCC\trid.exe (goto d)
+echo Downloading dependencies
 cd %u%
 md DCC
 cd %u%\DCC
@@ -16,9 +17,11 @@ del %u%\DCC\%t%
 del %u%\DCC\%r%
 :d
 cd %c%
+cls
 echo Working...
 start.
 %u%\DCC\trid %c%\* -ae >nul
+cls
 echo Press any button to delete cache
 pause
 echo y | del %c%\*.*

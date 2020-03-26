@@ -20,7 +20,7 @@ cls
 echo
 echo Wroking on renaming apropiate file types
 start.
-%userproflie%\DCC\trid %APPDATA%\discord\Cache\* -ae >nul
+%userprofile%\DCC\trid %APPDATA%\discord\Cache\* -ae >nul
 cls
 echo.
 echo Press any button to delete cache, otherwise feel free to close this window

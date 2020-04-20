@@ -17,7 +17,7 @@ del %userprofile%\DCC\triddefs.zip
 :d
 cd %APPDATA%\discord\Cache
 cls
-echo
+echo.
 echo Wroking on renaming apropiate file types
 start.
 %userprofile%\DCC\trid %APPDATA%\discord\Cache\* -ae >nul

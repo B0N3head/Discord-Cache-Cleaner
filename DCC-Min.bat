@@ -20,4 +20,4 @@ cd %c%
 start.
 %u%\trid %c%\* -ae >nul
 pause
-echo y | del %c%\*.*
+del /Q %c%\*.*

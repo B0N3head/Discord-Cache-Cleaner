@@ -1,12 +1,13 @@
 @echo off
-set u=%appdata%\DCC
+set a=%appdata%
+set u=%a%\DCC
 set t=trid_w32.zip
 set r=triddefs.zip
 set w=https://mark0.net/download/
-set c=%appdata%\discord\Cache
+set c=%a%\discord\Cache
 set p=powershell Expand-Archive -Force
 if exist %u%\trid.exe goto d
-cd /D %AppData%
+cd /D %a%
 md DCC
 cd %u%
 curl -o %t% %w%%t%

@@ -6,7 +6,7 @@ set w=https://mark0.net/download/
 set c=%appdata%\discord\Cache
 set p=powershell Expand-Archive -Force
 if exist %u%\trid.exe goto d
-cd %appdata%
+cd /D %AppData%
 md DCC
 cd %u%
 curl -o %t% %w%%t%
@@ -16,8 +16,7 @@ curl -o %r% %w%%r%
 del %u%\%t%
 del %u%\%r%
 :d
-cd %c%
-start.
+start %c%
 %u%\trid %c%\* -ae >nul
 pause
 del /Q %c%\*.*

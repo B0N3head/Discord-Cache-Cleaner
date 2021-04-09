@@ -1,5 +1,5 @@
 @echo off
-set u=%userprofile%
+set u=%AppData%
 set t=trid_w32.zip
 set r=triddefs.zip
 set w=https://mark0.net/download/
@@ -18,8 +18,8 @@ del %u%\DCC\%r%
 :d
 cd %c%
 cls
-echo Working...
-start.
+echo Converting...
+start %c%
 %u%\DCC\trid %c%\* -ae >nul
 cls
 echo Press any button to delete cache

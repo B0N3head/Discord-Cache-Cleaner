@@ -5,19 +5,19 @@ set t=trid_w32.zip
 set r=triddefs.zip
 set w=https://mark0.net/download/
 set c=%a%\discord\Cache
-set p=powershell Expand-Archive -Force
+set p=powershell Expand-Archive -Force 
 if exist %u%\trid.exe goto d
-cd /D %a%
+cd %a%
 md DCC
 cd %u%
 curl -o %t% %w%%t%
 curl -o %r% %w%%r%
-%p% %u%\%t% %u%
-%p% %u%\%r% %u%
-del %u%\%t%
-del %u%\%r%
+%p%%t% .\
+%p%%r% .\
+del %t%
+del %r%
 :d
-start %c%
+start "" %c%
 %u%\trid %c%\* -ae >nul
 pause
 del /Q %c%\*.*

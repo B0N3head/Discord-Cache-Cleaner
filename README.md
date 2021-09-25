@@ -5,7 +5,7 @@ There are 3 files, your choice (they all fundamentally do the same thing)
 |File|Size|
 |--|--|
 |DCC-Min  |  362 bytes|
-|DCC-Main  |  561 bytes |
+|DCC-Main  |  582 bytes |
 |DCC-Full  |  819  bytes|
 
 ## DCC Min

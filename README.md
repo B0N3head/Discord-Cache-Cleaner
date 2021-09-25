@@ -1,5 +1,5 @@
 # Discord-Cache-Cleaner
-Simple Discord cache viewer and cleaner written in batch
+Simple Discord cache **viewer and cleaner** written in batch
 
 There are 3 files, your choice (they all fundamentally do the same thing)
 |File|Size|

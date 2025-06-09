@@ -1,3 +1,6 @@
+## Archive reason
+Discord changed the path of the cache (an extra 11 bytes) making it impossible to minimise the script any further 😥
+
 # Discord-Cache-Cleaner
 A dead simple Discord cache **viewer and cleaner** written in batch
 
